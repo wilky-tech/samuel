@@ -1,8 +1,9 @@
 // Toggle class active untuk menu
 const navbarnav = document.querySelector(".navbar-nav");
 // Ketika menu di klik
-document.querySelector("#menu").onclick = () => {
+document.querySelector("#menu").onclick = (e) => {
   navbarnav.classList.toggle("active");
+  e.preventDefault();
 };
 
 // Toggle class active untuk search form
@@ -64,4 +65,3 @@ window.onclick = (e) => {
     itemDetalModal.style.display = "none";
   }
 };
-  
